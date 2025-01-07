@@ -1,0 +1,12 @@
+/* Footer Section */
+footer h1 {
+    color: var(--primary-color);
+}
+footer li a {
+    color: var(--link-color);
+}
+@media (max-width: 400px) {
+    footer h1{
+        font-size: 2.7rem;
+    }
+}

@@ -1,0 +1,9 @@
+.number-card{
+  box-shadow: 3px 4px 12px 3px var(--boxshadow-color);
+}
+#user-list-section input, #user-list-section select{
+  box-shadow: 3px 4px 12px 3px var(--boxshadow-color);
+}
+#user-card{
+  box-shadow: 2px 2px 21px -3px var(--boxshadow-color);
+}

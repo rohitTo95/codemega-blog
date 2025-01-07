@@ -1,0 +1,27 @@
+h2{
+    font-size: 3.4rem;
+    line-height: 5.4rem;
+
+}
+#copy-post-url-container{
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 50vh;
+    border-radius: 1.5rem;
+}
+#copy-post-url-container input{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    outline: none;
+    width: 30%;
+}
+#copy-post-url-container button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    box-shadow: 2px 5px 18px 2px var(--boxshadow-color);
+}
+
+#post-img{
+   aspect-ratio: 16/9;
+   box-shadow: 5px 5px 27px -15px var(--boxshadow-color);
+}

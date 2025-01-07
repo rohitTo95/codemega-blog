@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* tailwind directives  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--paragraph-color);
+}
+:root {
+  /* Light Theme Variables */
+  --bg-light-color: rgb(231, 231, 231);
+  --bg-transparent-light-color: rgba(231, 231, 231, 0.582);
+  --primary-light-color: #171616;
+  --secondary-light-color: rgb(208 208 208 / 85%);
+  --heading-light-color: #282828;
+  --link-light-color: #282828;
+  --paragraph-light-color: #353434;
+  --button-bg-light-color: #161616;
+  --button-text-light-color: #f0f0f0;
+  --boxshadow-light-color: rgba(0, 0, 0, 0.29);
+  --placeholder-light-color: #353434f2;
+  --tag-text-light-color: #191919;
+  --tag-bg-light-color: rgba(245, 245, 245, 0.894);
+
+  /* Dark Theme Variables */
+  --bg-dark-color: rgb(33, 35, 40);
+  --bg-transparent-dark-color: rgba(33, 35, 40, 0.521);
+  --primary-dark-color: #ededed;
+  --secondary-dark-color: rgba(24, 23, 23, 0.949);
+  --heading-dark-color: #f5f5f5;
+  --link-dark-color: #e8e8e8;
+  --paragraph-dark-color: #ececec;
+  --button-bg-dark-color: #f0f0f0;
+  --button-text-dark-color: #161616;
+  --boxshadow-dark-scolor: rgba(136, 169, 255, 0.2);
+  --placeholder-dark-color: #dddddde3;
+  --tag-text-dark-color: #f0f0f0;
+  --tag-bg-dark-color: rgba(18, 18, 18, 0.894);
+}
+
+/* Light Theme */
+[color-scheme="light"] {
+  --bg-color: var(--bg-light-color);
+  --bg-transparent-color: var(--bg-transparent-light-color);
+  --primary-color: var(--primary-light-color);
+  --secondary-color: var(--secondary-light-color);
+  --heading-color: var(--heading-light-color);
+  --paragraph-color: var(--paragraph-light-color);
+  --button-bg-color: var(--button-bg-light-color);
+  --button-text-color: var(--button-text-light-color);
+  --link-color: var(--link-light-color);
+  --boxshadow-color: var(--boxshadow-light-color);
+  --placeholder-color: var(--placeholder-light-color);
+  --tag-text-color: var(--tag-text-light-color);
+  --tag-bg-color: var(--tag-bg-light-color);
+}
+
+/* Dark Theme */
+[color-scheme="dark"] {
+  --bg-color: var(--bg-dark-color);
+  --bg-transparent-color: var(--bg-transparent-dark-color);
+  --primary-color: var(--primary-dark-color);
+  --secondary-color: var(--secondary-dark-color);
+  --heading-color: var(--heading-dark-color);
+  --paragraph-color: var(--paragraph-dark-color);
+  --button-bg-color: var(--button-bg-dark-color);
+  --button-text-color: var(--button-text-dark-color);
+  --link-color: var(--link-dark-color);
+  --boxshadow-color: var(--boxshadow-dark-color);
+  --placeholder-color: var(--placeholder-dark-color);
+  --tag-text-color: var(--tag-text-dark-color);
+  --tag-bg-color: var(--tag-bg-dark-color);
+}
+
+html {
+  font-size: 62.5%;
+  color-scheme: light dark;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+.default-spacing {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kanit", sans-serif;
+  color: var(--heading-color);
+}
+p,
+span {
+  color: var(--paragraph-color);
+}
+form input,
+form textarea {
+  outline: none;
+  resize: none;
+  background-color: var(--secondary-color);
+  color: var(--paragraph-color);
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 1.5rem;
+  box-shadow: 5px 9px 24px var(--boxshadow-color);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color);
+}
+button {
+  background-color: var(--primary-color);
+  color: var(--heading-color);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 30.5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .default-spacing {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

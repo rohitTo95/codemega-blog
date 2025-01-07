@@ -1,0 +1,5 @@
+.post-tag{
+    background-color: var(--tag-bg-color);
+    color: var(--tag-text-color);
+box-shadow: 4px 4px 20px 5px var(--boxshadow-color);
+}

@@ -1,0 +1,16 @@
+#admin-navigation ul{
+    box-shadow: 2px 2px 2px 2px var(--boxshadow-color);
+}
+.active-tab{
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        background: var(--primary-color);
+        border-radius: 999px;
+        justify-content: center;
+        align-items: center;
+        transition: .78s;
+}
+.active-tab a i{
+    color: var(--secondary-color);
+}

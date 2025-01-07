@@ -1,0 +1,11 @@
+#back-button{
+    border: 2px solid var(--button-bg-color);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    box-shadow: 2px 2px 12px 2px var(--boxshadow-color);
+}
+#back-button:hover{
+    border-color: var(--button-text-color);
+    background-color: var(--button-text-color);
+    color: var(--button-bg-color);
+}

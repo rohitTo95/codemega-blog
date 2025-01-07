@@ -1,0 +1,199 @@
+/* @import url("root.css"); */
+/* Navigation Icons */
+nav {
+    background-color: var(--secondary-color);
+box-shadow: 6px 6px 15px -5px var(--boxshadow-color);
+}
+nav i {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+#theme-toggle {
+box-shadow: 2px 2px 17px -2px var(--boxshadow-color);
+}
+#theme-toggle i {
+    color: var(--primary-color);
+}
+
+/* General Section: Theme Toggle */
+.toggle-btn {
+    width: 6rem;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--link-light-color);
+    border-radius: 1.5rem;
+    padding: .5rem 0 .5rem .5rem;
+    transition: background 0.3s ease, justify-content 0.3s ease;
+}
+
+.toggle-btn.active {
+    justify-content: flex-end;
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Navigation Menu */
+#nav-menu {
+    width: 60px;
+    height: fit-content;
+    background: var(--secondary-color);
+    clip-path: circle(0% at 100% 0);
+    transition: clip-path 0.7s ease-in-out;
+    border-radius: 3rem;
+}
+
+#nav-menu.active {
+    clip-path: circle(150% at 50% 50%);
+    z-index: 5;
+}
+
+#nav-menu ul {
+    opacity: 0;
+    visibility: hidden; /* Add this */
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Delay visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+#nav-menu.active ul {
+    opacity: 1;
+    visibility: visible; /* Make visible when active */
+    transition: opacity 0.5s ease-in-out;
+}
+
+#nav-menu ul li {
+    color: var(--link-color);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--link-color);
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+    transition: padding-left 0.3s ease-in-out;
+    margin: 1.2rem 0;
+}
+
+#nav-menu ul li:hover {
+    padding-left: 3.4rem;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    width: 4rem; /* Adjust size as needed */
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end; /* Center align horizontally */
+    cursor: pointer;
+    z-index: 20; /* Keep it above other elements */
+}
+
+/* Bar Styling */
+.hamburger-menu .bar {
+    height: 0.3rem; /* Adjust thickness */
+    background-color: var(--primary-color, #000); /* Use theme color */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.hamburger-menu .bar:nth-child(1) {
+    width: 50%;
+}
+
+.hamburger-menu .bar:nth-child(2) {
+    width: 75%;
+}
+
+.hamburger-menu .bar:nth-child(3) {
+    width: 100%;
+}
+/* Active State - Transform to Cross */
+.hamburger-menu.active .bar:nth-child(1) {
+    width: 100%;
+    transform: translateY(1rem) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    width: 100%;
+    transform: translateY(-1.3rem) rotate(-45deg);
+}
+
+
+/* login-signup-panel */
+#login-signup-panel {
+    display: none;
+    z-index: 9999;
+    
+}
+#login-signup-panel.active{
+    display: flex;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        width: 3.5rem; /* Slightly smaller for mobile */
+        height: 2.5rem;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .hamburger-menu .bar {
+        height: 0.3rem; /* Thinner bars */
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .hamburger-menu {
+        width: 3.5rem;
+        height: 2.5rem;
+    }
+
+    .bar {
+        height: 0.3rem;
+    }
+
+    #nav-menu ul li {
+        font-size: 1.2rem;
+        padding: .6rem 1.5rem;
+    }
+}
+
+
+/* responsiveness  */
+@media (max-width: 400px) {
+    header nav div:nth-child(2) {
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 300px) {
+    header nav div:nth-child(1){
+        width: 3rem;
+        height: 3rem;
+        justify-content: center;
+        padding-left: 2px;
+    }
+    header nav div:nth-child(1) i{
+       font-size: 2rem;
+    }
+    .hamburger-menu {
+        width: 3rem;
+        height: 2rem;
+    }
+    .hamburger-menu .bar {
+        height: 0.2rem;
+    }
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-1rem) rotate(-45deg);
+    }
+}

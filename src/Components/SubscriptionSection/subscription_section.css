@@ -1,0 +1,10 @@
+#subscription-section h2, #subscription-section h2 span{
+color: var(--heading-color);
+}
+#subscription-section form div{
+    border-bottom: 2px solid var(--button-bg-color);
+}
+#subscription-section form div input{
+    background-color: transparent !important;
+    box-shadow: none;
+}

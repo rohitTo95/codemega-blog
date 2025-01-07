@@ -1,0 +1,24 @@
+/* Search Section */
+.search-box {
+    gap: 10px;
+    background: var(--secondary-color);
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px var(--boxshadow-color);
+}
+
+.search-box input {
+    color: var(--heading-color);
+    flex-grow: 1;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.search-box button {
+    background: var(--secondary-color) ;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 2px 3px 23px 3px var(--boxshadow-color);
+}
+.search-box button i{
+    color: var(--primary-color);
+}

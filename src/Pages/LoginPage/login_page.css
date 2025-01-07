@@ -1,0 +1,8 @@
+@media (max-width: 400px) {
+    .social-login-handels{
+        margin-top: 2.5rem;
+    }
+    .social-login-handels i{
+        font-size: 1.5rem;
+    }
+}

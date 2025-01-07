@@ -1,0 +1,9 @@
+/* Explore Section */
+#explore-section img {
+    width: 65rem;
+}
+button{
+background: rgba(255, 255, 255, 0.86);
+box-shadow: 5px 3px 36px 1px rgba(0, 0, 0, 0.5);
+
+}

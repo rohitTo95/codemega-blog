@@ -1,0 +1,33 @@
+/* Post Section */
+.line-img {
+    width: 25rem;
+}
+
+.top-post h1 {
+    line-height: 5.7rem;
+}
+
+.top-post p {
+    line-height: 2.7rem;
+}
+
+.sub-posts h2 {
+    line-height: 4.5rem;
+}
+
+.sub-posts p {
+    line-height: 2.7rem;
+}
+
+/* responsiveness  */
+@media (max-width: 768px) {
+    .top-post h1 {
+        line-height: 3.7rem;
+    }
+    .sub-posts h2 {
+        line-height: 2.9rem;
+    }
+    .sub-posts p {
+        line-height: 2rem;
+    }
+}
